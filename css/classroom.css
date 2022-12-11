@@ -1,0 +1,273 @@
+.classroom-header-div {
+    padding: 1.5rem 2rem .5rem;
+}
+
+.classroom-button-div>.classroom-diabled-div {
+	background-image: linear-gradient(180deg, rgba(3, 7, 25, .57), transparent), linear-gradient(330.85deg, #eafaff, #f7f7f7)
+}
+
+.classroom-main-div {
+	border-radius: .5rem;
+	box-shadow: 0 0 8px 0 rgba(17, 22, 26, .16), 0 4px 8px 0 rgba(17, 22, 26, .08), 0 8px 16px 0 rgba(17, 22, 26, .08);
+	margin: 1.5rem 0;
+    overflow: hidden;
+    left:-20px;
+	position: relative;
+	transition: box-shadow .3s ease-in-out
+}
+
+.classroom-main_button-div {
+	background: transparent;
+	border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-indent: -999em;
+    top: 0;
+    transition: box-shadow .2s ease-in-out;
+    width: 100%;
+    z-index: 2;
+}
+
+.classroom-content-div,
+.classroom-inner-div {
+	background: #fff;
+	display: flex;
+	justify-content: space-between
+}
+
+.classroom-inner-div {
+	background: #f5fcfe
+}
+
+.classroom-button-div {
+	min-width: 15rem;
+	position: relative;
+	width: 35%
+}
+
+.classroom-button-div>span {
+	background-image: linear-gradient(330.85deg, #eafaff, #f7f7f7);
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	width: 100%
+}
+
+.classroom-button-div>span:after {
+	background: #fff;
+	content: "";
+	display: block;
+	height: 150%;
+	left: -5rem;
+	position: absolute;
+	top: -4rem;
+	-webkit-transform: rotate(20deg);
+	transform: rotate(20deg);
+	width: 8rem;
+	z-index: 1
+}
+
+.classroom-button-div>span:before {
+	background: hsla(0, 0%, 100%, .7);
+	bottom: 0;
+	content: "";
+	display: block;
+	left: -6rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: background .3s ease-in-out;
+	z-index: 1
+}
+
+.classroom-button-div a,
+.classroom-button-div button {
+	display: block;
+	margin: 0 3rem 0 auto;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%) translateX(0rem);
+	transform: translateY(-50%) translateX(0rem);
+	z-index: 2
+}
+
+.classroom-header-div {
+	padding: 1.5rem 2rem .5rem
+}
+
+.classroom-header-div h3 {
+	font-size: .8125rem;
+	font-weight: 600;
+	margin-bottom: 0;
+	text-transform: uppercase
+}
+
+.classroom-header-div h4 {
+	font-size: 1.125rem
+}
+
+.classroom-empty-div {
+	padding: 0 2rem 1.5rem
+}
+
+.classroom-empty-div p {
+	line-height: 1.5rem
+}
+
+.classroom-main-div:hover {
+	box-shadow: 0 4px 16px 4px rgba(17, 22, 26, .16), 0 4px 8px 0 rgba(17, 22, 26, .08), 0 16px 24px 0 rgba(17, 22, 26, .08)
+}
+
+.classroom-main-div:hover .classroom-button-div>span:before {
+	background: hsla(0, 0%, 100%, .5)
+}
+
+@media (max-width:61.24em) {
+	.classroom-button-div {
+		min-width: 12rem;
+		width: 30%
+	}
+}
+
+@media (max-width:46.24em) {
+	.classroom-content-div,
+	.classroom-inner-div {
+		flex-direction: column;
+		position: relative
+	}
+	.classroom-header-div,
+	.classroom-empty-div {
+		position: relative;
+		z-index: 2
+	}
+	.classroom-button-div {
+		min-width: unset;
+		position: static;
+		width: 100%
+	}
+	.classroom-button-div>span {
+		bottom: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 40%
+	}
+	.classroom-button-div>span:after,
+	.classroom-button-div>span:before {
+		z-index: 1
+	}
+	.classroom-button-div a,
+	.classroom-button-div button {
+		display: inline-block;
+		margin: 1rem 2rem 1.5rem;
+		top: 0;
+		-webkit-transform: none;
+		transform: none
+	}
+}
+
+body[dir=rtl] .classroom-button-div>span:after {
+	left: auto;
+	right: -4.5rem;
+	top: -2rem
+}
+
+body[dir=rtl] .classroom-button-div a,
+body[dir=rtl] .classroom-button-div button {
+	margin: 0 auto 0 3rem
+}
+
+@media (max-width:46.24em) {
+	body[dir=rtl] .classroom-button-div>span {
+		left: 0;
+		right: auto
+	}
+	body[dir=rtl] .classroom-button-div a,
+	body[dir=rtl] .classroom-button-div button {
+		margin: 1rem 2rem 1.5rem
+	}
+}
+
+
+.course-icon--lg {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+
+
+.course-icon {
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    fill: currentColor;
+    line-height: 0;
+    stroke: currentColor;
+    vertical-align: middle;
+}
+
+
+.button_div {
+    height: 3rem;
+    padding: 0 2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: transparent;
+    border-radius: .25rem;
+    color: #3357d6;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .8125rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+}
+
+.button_div--primary {
+    background: #3357d6;
+    color: #fff;
+}
+
+.button_div--default:hover, .button_div--destructive:hover, .button_div--primary:hover, .button_div--secondary:hover {
+    box-shadow: 0 4px 16px 4px rgba(17,22,26,.16), 0 4px 8px 0 rgba(17,22,26,.08), 0 16px 24px 0 rgba(17,22,26,.08);
+}
+
+
+.button_div__content {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.classroom-img{
+    width: 85px;
+    height: 85px !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    margin-right: 15px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+

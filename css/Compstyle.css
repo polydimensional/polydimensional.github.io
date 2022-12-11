@@ -1,0 +1,65 @@
+
+
+ .intro-tabs{
+	position:relative;
+  width: 100%;
+}
+
+ .intro-tabs .tab-btns{
+	position:relative;
+	text-align:center;
+	margin-bottom:30px;
+	border-radius:5px;
+  padding: 0;
+	background-color:#fbfbfb;
+}
+
+ .intro-tabs .tab-btns .tab-btn{
+	position:relative;
+	display:block;
+	font-size:14px;
+	background:none;
+	color:#000;
+	font-weight:550;
+  width: 100%;
+  font-family: "Poppins" ,sans-serif;
+	line-height:24px;
+	cursor:pointer;
+	float:left;
+	border-radius:3px;
+	background-color:#33333338;
+	padding:12px 40px 10px;
+	text-transform:capitalize;
+	transition:all 500ms ease;
+}
+
+ .intro-tabs .tab-btns .tab-btn:hover,
+ .intro-tabs .tab-btns .tab-btn.active-btn{
+	color:#ffffff;
+	background:#075e89;
+}
+
+
+ .intro-tabs .tabs-content{
+	position:relative;
+	padding:30px 0px 25px;
+	overflow:hidden;
+	background-color:#ffffff;
+}
+
+ .intro-tabs .tabs-content .tab{
+	position:relative;
+	display:none;
+}
+
+ .intro-tabs .tabs-content .tab.active-tab{
+	display:block;
+}
+
+ .intro-tabs .tabs-content .minutes{
+	position:relative;
+	color:#00ab15;
+	font-size:14px;
+	font-weight:500;
+	margin-top:12px;
+}
